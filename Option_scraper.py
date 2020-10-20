@@ -47,6 +47,17 @@ for i in range(0, len(tickers)):
     data = temp.history()
     last_quote = (data.tail(1)['Close'].iloc[0])
     center_strike = (math.ceil(last_quote))
+    
+    #determine strike width according to absolute stock price
+    if center_strike >300:
+        strike_width = 20
+    elif center_strike>200:
+        strike_width = 15
+    elif center_strike >100:
+        strike_width = 10
+    else:
+        strike_width = 5
+        
     cdf=pd.DataFrame()
     for j in range(0, min(5,len(temp.options))):
         try:
