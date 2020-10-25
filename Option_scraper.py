@@ -54,6 +54,8 @@ for i in range(0, len(tickers)):
     elif center_strike>200:
         strike_width = 15
     elif center_strike >100:
+        strike_width = 12
+    elif center_strike >50:
         strike_width = 10
     else:
         strike_width = 5
@@ -63,10 +65,7 @@ for i in range(0, len(tickers)):
         try:
             df = temp.option_chain(str(temp.options[j])).calls
             center_strike_pos = (df[df['strike']==center_strike].index.values)[0]
-            down, up = center_strike_pos - strike_width, center_strike_pos + strike_width
-            df = df[down:up]
             df_puts = temp.option_chain(str(temp.options[j])).puts
-            df_puts = df_puts[down:up]
             df = df.append(df_puts)
             cdf = cdf.append(df)
             Amount_of_API_Calls += 2
