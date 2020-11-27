@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[30]:
-
-
 # Necessary Libraries
 import yfinance as yf
 import pandas as pd
@@ -15,9 +12,6 @@ from statistics import mean
 import math
 
 
-# In[7]:
-
-
 # If you have a list of your own you would like to use just create a new list instead of using this, for example: tickers = ["FB", "AMZN", ...] 
 tickers = ["AMZN", "NVDA", "GOOGL", "TSLA", "MSFT", "FB", "AAPL", "SPY", "UDOW", "SDOW", "SPXL", "SPXS"]
 # Check that the amount of tickers isn't more than 2000
@@ -27,9 +21,6 @@ os.chdir(r"C:\Users\igorq\Documents\Phynance\Data")
 shutil.rmtree("Stocks/")
 os.mkdir("Stocks/")
 #  These will do the same thing but for the folder jolding the Stats for each stock.
-
-
-# In[8]:
 
 
 # Do not make more than 2,000 calls per hour or 48,000 calls per day or Yahoo Finance may block your IP. The clause "(Amount_of_API_Calls < 1800)" below will stop the loop from making
@@ -240,15 +231,6 @@ for stock in list_files:
     df.to_excel(writer, sheet_name=Company)
 
 writer.save()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
