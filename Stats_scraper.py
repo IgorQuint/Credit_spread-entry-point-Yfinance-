@@ -227,7 +227,7 @@ for stock in list_files:
     }
     df = pd.DataFrame(df_dict, columns = ['Date', 'Prices', 'upPrices', 'downPrices', 'AvgGain','AvgLoss', 'RS', "RSI", "MACD", "Signal", "30 day MA", "30-day std deviation", "Upper band", "Lower band"])
     
-    # Write each dataframe to a different worksheet.
+    # Write each dataframe to a different tab.
     df.to_excel(writer, sheet_name=Company)
 
 writer.save()
