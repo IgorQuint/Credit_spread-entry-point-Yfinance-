@@ -4,7 +4,7 @@
 # In[83]:
 
 
-# Necessary Libraries
+# Libraries
 import yfinance as yf
 import pandas as pd
 import shutil, os, time, glob
