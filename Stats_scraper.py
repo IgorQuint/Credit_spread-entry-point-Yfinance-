@@ -24,7 +24,7 @@ os.mkdir("Stocks/")
 
 
 # Do not make more than 2,000 calls per hour or 48,000 calls per day or Yahoo Finance may block your IP. The clause "(Amount_of_API_Calls < 1800)" below will stop the loop from making
-# too many calls to the yfinance API.
+# too many calls to the Yahoo finance API.
 Stock_Failure = 0
 Stocks_Not_Imported = 0
 Amount_of_API_Calls = 0
