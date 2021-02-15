@@ -59,7 +59,7 @@ for i in range(0, len(tickers)):
         except:
             pass                
 
-    # Write each dataframe to a different worksheet.
+    # Write each dataframe to a different worksheet
     with pd.ExcelWriter(pathopt+stock+ext, engine='openpyxl', mode='a') as writer:
         cdf.to_excel(writer, sheet_name=date, index=False)
 
