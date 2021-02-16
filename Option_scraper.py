@@ -37,7 +37,7 @@ date= date.strftime("%d%m%Y")
 
 # In[87]:
 
-#to avoid overuse of the Yahoo finance API
+#to avoid overuse of the Yahoo Fin API
 Amount_of_API_Calls = 0
 
 for i in range(0, len(tickers)):
