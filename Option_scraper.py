@@ -76,9 +76,3 @@ print("Amount of API Calls: "+str(Amount_of_API_Calls))
 
 
 
-
-# In[ ]:
-
-
-
-
