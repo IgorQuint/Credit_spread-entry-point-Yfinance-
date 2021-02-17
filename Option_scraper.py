@@ -66,13 +66,6 @@ for i in range(0, len(tickers)):
 print(str(len(tickers))+" Excel tabs saved succesfully")
 print("Amount of API Calls: "+str(Amount_of_API_Calls))
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
