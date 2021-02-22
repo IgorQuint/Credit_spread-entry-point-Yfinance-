@@ -19,7 +19,7 @@ from openpyxl import load_workbook
 # In[84]:
 
 
-#Locations
+# Locations
 os.chdir(r"C:\Users\igorq\Documents\Phynance\Data")
 pathopt = "Options/"
 ext = ".xlsx"
@@ -37,7 +37,7 @@ date= date.strftime("%d%m%Y")
 
 # In[87]:
 
-#to avoid overuse of the Yahoo Fin API
+# To avoid overuse of the Yahoo Fin API
 Amount_of_API_Calls = 0
 
 for i in range(0, len(tickers)):
