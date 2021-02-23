@@ -16,7 +16,6 @@ import math
 import Stats_scraper
 from openpyxl import load_workbook
 
-# In[84]:
 
 
 # Locations
